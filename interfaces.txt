@@ -1,0 +1,37 @@
+interface Ethernet1/9
+  ip address 10.0.0.2 255.255.255.0
+
+interface Ethernet1/10
+  switchport mode trunk
+  switchport trunk native vlan 40
+  spanning-tree port type edge trunk
+
+interface Ethernet1/11
+  switchport mode trunk
+  switchport trunk native vlan 50
+  spanning-tree port type edge
+  channel-group 35 mode active
+
+interface Ethernet1/12
+  switchport mode trunk
+  switchport trunk native vlan 60
+  spanning-tree port type edge
+  channel-group 36 mode active
+
+interface Ethernet1/13
+  switchport mode trunk
+  switchport trunk native vlan 70
+  spanning-tree port type edge
+  channel-group 37 mode active
+
+interface Ethernet1/14
+  switchport mode trunk
+  switchport trunk native vlan 80
+  spanning-tree port type edge
+  channel-group 38 mode active
+
+interface Ethernet1/15
+  switchport mode trunk
+  switchport trunk native vlan 90
+  spanning-tree port type edge trunk
+  channel-group 39 mode active

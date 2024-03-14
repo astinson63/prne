@@ -1,0 +1,5 @@
+device,ip,mask,admin
+router1,192.168.1.1,255.255.255.0,True
+router2,192.168.2.2,255.255.255.0,False
+router3,192.168.3.3,255.255.255.0,True
+router4,192.168.4.4,255.255.255.0,False
