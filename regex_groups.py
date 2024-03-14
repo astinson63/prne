@@ -15,6 +15,7 @@ def regex_ip_search():
     print(f'Group 1: {result.group(1)}')
     print(f'Group 2: {result.group(2)}')
 
+
 def regex_mac_search():
     data = 'internet 10.12.0.1 0050.56ac.ba7b\ninternet 10.12.0.1 0050.56ac.b87b\ninternet 10.12.0.1 0050.56ac.bd7b\ninternet 10.12.0.1 0050.56ac.bf7b\ninternet 10.12.0.1 0050.56ac.bg7b' 
     pattern = '((?:[0-9a-f]{4}\.){2}[0-9a-f]{4})'
@@ -28,6 +29,7 @@ def regex_mac_search():
     print(f'Group 0: {result.group(0)}')
     print(f'Group 1: {result.group(1)}')
     print(f'result[1]: {result[1]}')
+
 
 def regex_mac_findall():
     data = 'internet 10.12.0.1 0050.56ac.ba7b\ninternet 10.12.0.1 0050.56ac.b87b\ninternet 10.12.0.1 0050.56ac.bd7b\ninternet 10.12.0.1 0050.56ac.bf7b\ninternet 10.12.0.1 0050.56ac.bg7b' 
@@ -47,5 +49,6 @@ def main():
     regex_ip_search()
     regex_mac_search()
     regex_mac_findall()
+    
     
 if __name__ == '__main__':main()

@@ -11,7 +11,6 @@ with open('interfaces.txt', 'r') as f:
     interface_native_vlans = re.findall(native_vlan_pattern,interfaces)
     interface_dict = dict(zip(interface_names, interface_native_vlans))
 
-
 #print(interfaces)
 print(interface_names,end='\n\n')
 print(interface_native_vlans,end='\n\n')

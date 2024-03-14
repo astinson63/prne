@@ -1,33 +1,32 @@
 import getpass
 
+
 def input_password():
     device_ip = input('Enter the device ip:')
-    interfaces_to_return = 0
+    username = input('Enter the username:')
+    password = getpass.getpass('Enter the password')
     
-    try:
-        interfaces_to_return = int(input('How many interfaces should I return?'))
-    except TypeError as e:
-        print(f'\nInvalid response - Please enter a number - Error:{e} \n')
-    except ValueError as e:
-        print(f'\nInvalid response - Please enter a number - Value Error:{e} \n')
-    else:
-        print('\nThanks for giving me a number!\n')
-    finally:
-        print('\nThis Try block has completed...\n')
-
-
     print(f'Device IP: {device_ip}')
-    print(f'Interfaces to return: {interfaces_to_return}')
+
 
 
 def input_int():
-    value = input('Please enter a vlan:')
-    try:        
-        print(int(value)+10)
-    except:
-        print ('not an integer')
-    print (f'Data type for value: {type(value)}')
+    vlan_id = input('\nPlease enter a vlan id (or don\'t for an exception):')
+    
+    try:
+        vlan_id = int(vlan_id)
+    except ValueError as e:
+        print(f'\nValue Error Exception: Please enter a number for vlan id.\n\tException returned is: {e} \n')
+    else:
+        print('\nThanks for giving me a number!\n')
+    finally:
+        print('\nProcessing vlan...\n')
+
+    try:
+        print(f'VLAN ID is a number - I can add to it! Your vlan id: {vlan_id} + 10 = {vlan_id+10}')
+    except TypeError as e:
+        print(f'\nType Error Exception: VLAN ID is not type a number.\n\tException returned is: {e} \n')
     
 
-input_password()
-#input_int()
+#input_password()
+input_int()

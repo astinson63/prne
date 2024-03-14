@@ -12,17 +12,19 @@ json_data = [
         'mask': '255.255.255.0'        
     }
 ]
-
 python_dict = {'router1':{'ip':'192.168.1.1'}}
+
 
 def read_file():
     print('Contents of example.json:')
+    
     with open('example.json', 'r') as f:
         print(json.load(f))
 
 
 def pprint_file():
     print('Contents of example.json:')
+    
     with open('example.json', 'r') as f:
         pprint(json.load(f))
 
@@ -30,6 +32,7 @@ def pprint_file():
 
 def write_file():
     print('Writing File example2.json...',end='')
+    
     with open('example2.json', 'w') as f:
         json.dump(json_data, f, indent=2)
 
@@ -45,7 +48,6 @@ def main():
     #read_file()
     #pprint_file()
     write_file()
-
     print('\n')
     
 

@@ -17,7 +17,7 @@ def demo_pattern(re_pattern, re_data):
 
 
 for data in regex_data.keys():
-    print (f'\n\nData:\t"{data}"\n')
+    print(f'\n\nData:\t"{data}"\n')
     for pattern in regex_data[data]:
         demo_pattern(pattern, data)
 

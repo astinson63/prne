@@ -1,5 +1,6 @@
 myvar = 'Global Scope'
 
+
 def scope_test(myvar='function Scope'):
     return myvar
 

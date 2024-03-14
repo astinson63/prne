@@ -15,7 +15,7 @@ def ping_host(ip='127.0.0.1'):
         if count>10:
             logging.error(f'Ping to {ip} failed')
             sys.exit(f'Ping to {ip} failed.')
-        # this is for linux based OS
+        # options are for linux based OS
         p = Popen(['ping',ip,'-c','1','-W','2'])
         logging.debug(p)
         p.wait()

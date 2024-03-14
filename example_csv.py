@@ -31,7 +31,7 @@ def write_file():
     print('Writing File:')
     with open('example2.csv', 'w') as f:
         devices = csv.writer(f)
-        
+
         for row in write_data:
             devices.writerow(row)
 
@@ -48,7 +48,6 @@ def main():
     #read_file()
     #dictreader_file()
     write_file()
-
     print('\n')
     
 
