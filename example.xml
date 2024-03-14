@@ -1,16 +1,15 @@
+<?xml version="1.0"?>
 <devices>
     <routers>
-        <router1>
-            <name>router1</name>
+        <router name="router1">
             <ip>192.168.1.1</ip>
             <mask>255.255.255.0</mask>
             <admin>True</admin>
-        </router1>
-        <router2>
-            <name>router2</name>
+        </router>
+        <router name="router2">
             <ip>192.168.2.2</ip>
             <mask>255.255.255.0</mask>
             <admin>False</admin>
-        </router2>
+        </router>
     </routers>
 </devices>
